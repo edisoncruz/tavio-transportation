@@ -2,30 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    --background: 218 45% 18%;
-    --foreground: 0 0% 100%;
-    --card: 218 45% 22%;
-    --card-foreground: 0 0% 100%;
-    --popover: 218 45% 22%;
-    --popover-foreground: 0 0% 100%;
-    --primary: 38 92% 50%;
+    --background: 0 0% 5%;
+    --foreground: 0 0% 95%;
+    --card: 0 0% 9%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 8 85% 52%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 218 45% 25%;
-    --secondary-foreground: 0 0% 100%;
-    --muted: 218 30% 30%;
-    --muted-foreground: 218 15% 65%;
+    --secondary: 38 92% 50%;
+    --secondary-foreground: 0 0% 5%;
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 55%;
     --accent: 38 92% 50%;
-    --accent-foreground: 0 0% 100%;
+    --accent-foreground: 0 0% 5%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-    --border: 218 30% 30%;
-    --input: 218 30% 30%;
-    --ring: 38 92% 50%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 8 85% 52%;
     --radius: 0.5rem;
+
+    --font-display: 'Oswald', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    --gradient-chrome: linear-gradient(135deg, hsl(0 0% 30%), hsl(0 0% 70%), hsl(0 0% 30%));
+    --gradient-hot: linear-gradient(135deg, hsl(8 85% 52%), hsl(38 92% 50%));
+    --shadow-glow: 0 0 30px hsl(8 85% 52% / 0.3);
+
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
@@ -43,6 +51,27 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-body);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .text-gradient-chrome {
+    background: var(--gradient-chrome);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .bg-gradient-hot {
+    background: var(--gradient-hot);
+  }
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  .border-gradient {
+    border-image: var(--gradient-hot) 1;
   }
 }
