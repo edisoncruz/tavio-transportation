@@ -17,8 +17,7 @@ const Index = () => {
         24/7 Flatbed Towing & Mobile Mechanic
       </p>
 
-      {/* Divider */}
-      <div className="my-6 h-px w-32 bg-border sm:my-8 sm:w-48" />
+      <div className="my-6 sm:my-8" />
 
       {/* Coming Soon */}
       <p className="font-display text-3xl font-bold tracking-wider sm:text-6xl">
