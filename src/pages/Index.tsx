@@ -20,8 +20,16 @@ const Index = () => {
       <div className="my-6 sm:my-8" />
 
       {/* Coming Soon */}
-      <p className="font-display text-3xl font-bold tracking-wider sm:text-6xl">
-        <span className="bg-gradient-hot bg-clip-text text-transparent">COMING SOON</span>
+      <p
+        className="font-display text-3xl font-bold tracking-wider sm:text-6xl"
+        style={{
+          backgroundImage: "linear-gradient(135deg, hsl(8 85% 52%), hsl(38 92% 50%))",
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent",
+          backgroundClip: "text",
+        }}
+      >
+        COMING SOON
       </p>
 
       <p className="mt-3 text-sm text-muted-foreground sm:mt-4 sm:text-lg">
