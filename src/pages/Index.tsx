@@ -23,7 +23,7 @@ const Index = () => {
       <p
         className="font-display text-3xl font-bold tracking-wider sm:text-6xl"
         style={{
-          backgroundImage: "linear-gradient(135deg, hsl(8 85% 52%), hsl(38 92% 50%))",
+          backgroundImage: "linear-gradient(135deg, hsl(0 80% 45%), hsl(45 100% 50%))",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
           backgroundClip: "text",
