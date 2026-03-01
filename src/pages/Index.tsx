@@ -23,7 +23,7 @@ const Index = () => {
       <p
         className="font-display text-3xl font-bold tracking-wider sm:text-6xl"
         style={{
-          backgroundImage: "linear-gradient(135deg, hsl(0 80% 45%), hsl(45 100% 50%))",
+          backgroundImage: "linear-gradient(135deg, hsl(0 80% 45%), hsl(0 80% 35%))",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
           backgroundClip: "text",
@@ -39,7 +39,7 @@ const Index = () => {
       {/* CTA Button - large touch target for mobile */}
       <a
         href="tel:4077058648"
-        className="mt-8 flex w-full max-w-sm items-center justify-center gap-3 rounded-lg bg-gradient-hot px-6 py-5 text-lg font-bold text-primary-foreground shadow-glow active:scale-95 transition-transform sm:mt-10 sm:w-auto sm:rounded-md sm:px-10 sm:text-2xl"
+        className="mt-8 inline-flex w-auto whitespace-nowrap items-center justify-center gap-3 rounded-lg bg-gradient-hot px-6 py-5 text-lg font-bold text-primary-foreground shadow-glow active:scale-95 transition-transform sm:mt-10 sm:px-10 sm:text-2xl"
       >
         <Phone className="h-6 w-6 shrink-0 sm:h-7 sm:w-7" />
         Call Now: (407) 705-8648
